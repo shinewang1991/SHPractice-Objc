@@ -120,6 +120,9 @@
 		A3F5FF8022B8BE400064F167 /* isa.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F5FF7F22B8BE400064F167 /* isa.h */; };
 		A3F5FF8222B8BF260064F167 /* _simple.h in Headers */ = {isa = PBXBuildFile; fileRef = A3F5FF8122B8BF260064F167 /* _simple.h */; };
 		A3F5FF9722B8CE780064F167 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F5FF9622B8CE780064F167 /* main.m */; };
+		A3F5FF9E22BA29D80064F167 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F5FF9D22BA29D80064F167 /* Person.m */; };
+		A3F5FFA422BA2A1E0064F167 /* Person+A.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F5FFA322BA2A1E0064F167 /* Person+A.m */; };
+		A3F5FFA722BA2A290064F167 /* Person+B.m in Sources */ = {isa = PBXBuildFile; fileRef = A3F5FFA622BA2A290064F167 /* Person+B.m */; };
 		E8923DA5116AB2820071B552 /* objc-block-trampolines.mm in Sources */ = {isa = PBXBuildFile; fileRef = E8923DA0116AB2820071B552 /* objc-block-trampolines.mm */; };
 		F9BCC71B205C68E800DD9AFC /* objc-blocktramps-arm64.s in Sources */ = {isa = PBXBuildFile; fileRef = 8379996D13CBAF6F007C2B5F /* objc-blocktramps-arm64.s */; };
 /* End PBXBuildFile section */
@@ -258,6 +261,12 @@
 		A3F5FF8122B8BF260064F167 /* _simple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _simple.h; sourceTree = "<group>"; };
 		A3F5FF9422B8CE780064F167 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F5FF9622B8CE780064F167 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A3F5FF9C22BA29D80064F167 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		A3F5FF9D22BA29D80064F167 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		A3F5FFA222BA2A1E0064F167 /* Person+A.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+A.h"; sourceTree = "<group>"; };
+		A3F5FFA322BA2A1E0064F167 /* Person+A.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+A.m"; sourceTree = "<group>"; };
+		A3F5FFA522BA2A290064F167 /* Person+B.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+B.h"; sourceTree = "<group>"; };
+		A3F5FFA622BA2A290064F167 /* Person+B.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+B.m"; sourceTree = "<group>"; };
 		BC8B5D1212D3D48100C78A5B /* libauto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libauto.dylib; path = /usr/lib/libauto.dylib; sourceTree = "<absolute>"; };
 		D2AAC0630554660B00DB518D /* libobjc.A.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libobjc.A.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8923D9C116AB2820071B552 /* objc-blocktramps-i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; name = "objc-blocktramps-i386.s"; path = "runtime/objc-blocktramps-i386.s"; sourceTree = "<group>"; };
@@ -533,8 +542,22 @@
 			isa = PBXGroup;
 			children = (
 				A3F5FF9622B8CE780064F167 /* main.m */,
+				A3F5FF9B22BA29C20064F167 /* Cagetory */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		A3F5FF9B22BA29C20064F167 /* Cagetory */ = {
+			isa = PBXGroup;
+			children = (
+				A3F5FF9C22BA29D80064F167 /* Person.h */,
+				A3F5FF9D22BA29D80064F167 /* Person.m */,
+				A3F5FFA222BA2A1E0064F167 /* Person+A.h */,
+				A3F5FFA322BA2A1E0064F167 /* Person+A.m */,
+				A3F5FFA522BA2A290064F167 /* Person+B.h */,
+				A3F5FFA622BA2A290064F167 /* Person+B.m */,
+			);
+			path = Cagetory;
 			sourceTree = "<group>";
 		};
 		F9BCC72A205C6A1600DD9AFC /* Frameworks */ = {
@@ -750,7 +773,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3F5FF9E22BA29D80064F167 /* Person.m in Sources */,
+				A3F5FFA722BA2A290064F167 /* Person+B.m in Sources */,
 				A3F5FF9722B8CE780064F167 /* main.m in Sources */,
+				A3F5FFA422BA2A1E0064F167 /* Person+A.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
